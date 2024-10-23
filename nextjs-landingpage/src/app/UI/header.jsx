@@ -1,5 +1,7 @@
 import React from 'react';
-
+import Icon from './icons/icons';
+import Register from './ui/registerButton';
+import Login from './ui/loginButton';
 
 const Header = () => {
   return (
@@ -20,7 +22,7 @@ const Header = () => {
           </li>
           <li className='flex'>
             <div className='flex  [&>*]:hover:text-blue-300  [&>*]:hover:fill-blue-300 '>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg> 
+                <Icon icon='about' />
                 <a href="/" className="flex group">
                     About
                 </a>
@@ -29,7 +31,7 @@ const Header = () => {
           </li>
           <li className='flex'>
             <div className='flex  [&>*]:hover:text-blue-300  [&>*]:hover:fill-blue-300 '>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg> 
+                <Icon icon='services' />
                 <a href="/" className="flex group">
                     Services
                 </a>
@@ -38,7 +40,7 @@ const Header = () => {
           </li>
           <li className='flex'>
             <div className='flex  [&>*]:hover:text-blue-300  [&>*]:hover:fill-blue-300 '>
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg> 
+                <Icon icon='contact' />
                 <a href="/" className="flex group">
                     Contact
                 </a>
@@ -49,10 +51,10 @@ const Header = () => {
 
         <ul className='flex space-x-3'>
             <li>
-                <a href="/register" className="bg-blue-400 p-2 px-3 rounded-3xl text-white hover:text-blue-200">Register</a>
+                <Register></Register>
             </li>
             <li>
-                <a href="/login" className="text-white hover:text-blue-200">Login</a>
+                <Login></Login>
             </li> 
             
         </ul>
